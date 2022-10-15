@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <title>Tik Tac Game</title>
+    <link rel="stylesheet" href="tictac.css" />
+    <script src="tictac.js" defer></script>
+  </head>
+
+  <body>
+    <div class="game">
+      <div class="board">
+        <div class="r r1">
+          <div class="b1 d1" onclick="tic1()" id="one"></div>
+          <div class="b1 d2" onclick="tic2()" id="two"></div>
+          <div class="b1 d3" onclick="tic3()" id="three"></div>
+        </div>
+
+        <div class="r r2">
+          <div class="b1 d4" onclick="tic4()" id="four"></div>
+          <div class="b1 d5" onclick="tic5()" id="five"></div>
+          <div class="b1 d6" onclick="tic6()" id="six"></div>
+        </div>
+
+        <div class="r r3">
+          <div class="b1 d7" onclick="tic7()" id="seven"></div>
+          <div class="b1 d8" onclick="tic8()" id="eight"></div>
+          <div class="b1 d9" onclick="tic9()" id="nine"></div>
+        </div>
+      </div>
+
+      <div class="score">
+        <h1>Score Board</h1>
+        <h3 id="scoreX">0</h3>
+        <h2>Player X</h2>
+        <h3 id="scoreO">0</h3>
+        <h2>Player O</h2>
+        <button class="mybutton" onclick="restart()">RESTART</button>
+      </div>
+    </div>
+  </body>
+</html>
